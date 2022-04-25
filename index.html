@@ -5,13 +5,119 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.css">
+  <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+  <link rel="stylesheet" href="./styles/home.css">
   <title>Main Page</title>
 </head>
 
 <body>
 
-  <h1>Inicio E3</h1>
+  <header class="navigation bg-dark text-white">
+    <div class="nav-brand">
+      <h1 class="ff-primary">
+        <!-- <a href="./index.html" class="text-white">GamesNews</a> -->
+        <a href="#hero">
+          <img src="./assets/images/main-logo-brand.png" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="uppercase">
+      <div class="dropdown">
+        <a href="#" class="navigation-menu">Menu</a>
+        <div class="dropdown-content">
+          <a href="#" class="">noticias</a>
+          <a href="#" class="">análisis</a>
+          <a href="#" class="">trucos/guías</a>
+          <a href="#" class="">videos</a>
+        </div>
+      </div>
+      <a href="#" class="a-link">noticias</a>
+      <a href="#" class="a-link">análisis</a>
+      <a href="#" class="a-link">trucos/guías</a>
+      <a href="#" class="a-link">videos</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container my-3 flow">
+
+      <section id="hero bg-primary">
+        <div class="hero d-flex flex-column flex-j-a-center my-2">
+          <div class="hero__title">
+            <h1 class="sec-title fw-400 t-center ff-secondary">
+              Our product is <span class="fw-700">coming soon</span>
+            </h1>
+          </div>
+
+          <p class="t-center">A supporting statement for your value proposition to encourage customers to complete your
+            CTA</p>
+
+          <a href="#" class="btn">Notify me</a>
+
+          <img src="./assets/images/img-section-1.png" alt="" class="hero__img">
+        </div>
+      </section>
+
+      <section class="my-2 bg-secondary">
+        <div class="section2 d-flex flex-column flex-j-a-center my-2">
+          <h2 class="sec-title t-center fw-700">Your Product in the Wild</h2>
+
+          <div class="t-center">
+
+            <p>A few words about your product/offer. Focus on the benefits not the features.
+              Explain how your product will improve your customer’s life.</p>
+
+            <div class="section2__cards my-2">
+
+              <div class="section2__benefit-card">
+                <img src="./assets/icons/section-2_icon-1.png" alt="" class="section2__icons">
+                <p class="section2__benefit-title">Benefit No. 1</p>
+                <p class="section2__benefit-p">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+                </p>
+              </div>
+
+              <div class="section2__benefit-card">
+                <img src="./assets/icons/section-2_icon-2.png" alt="" class="section2__icons">
+                <p class="section2__benefit-title">Benefit No. 2</p>
+                <p class="section2__benefit-p">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+                </p>
+              </div>
+
+              <div class="section2__benefit-card">
+                <img src="./assets/icons/section-2_icon-3.png" alt="" class="section2__icons">
+                <p class="section2__benefit-title">Benefit No. 3</p>
+                <p class="section2__benefit-p">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary section3">
+        <div class="d-flex flex-column flex-j-a-center  t-center">
+
+          <p class="sec-title fw-400 fs-4 section3__title"><span class="fw-700">Sign up</span> now and don’t
+            miss
+            anything</p>
+
+          <p>
+            A supporting statement for your value proposition to encourage customers to complete your CTA
+          </p>
+
+          <a href="#" class="btn">Notify me</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
 </body>
 
 </html>

@@ -332,6 +332,21 @@ select {
 	display: grid;
 	column-gap: 75px;
 	row-gap: 60px;
+
+	/** Animacion */
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/** ANIMACION .container-layout */
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* ----------------------- */
@@ -341,8 +356,14 @@ select {
 .btn {
 	background-color: var(--btn-background);
 	color: var(--btn-text-color);
-	padding: 0.8rem 2.8rem;
-	border-radius: 1.5rem;
+	padding: 1rem 3rem;
+	border-radius: 1.7rem;
 	font-weight: bold;
 	font-size: var(--fs-400);
+	box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #bca5e8;
 }

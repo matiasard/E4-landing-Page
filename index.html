@@ -41,11 +41,13 @@
   <main>
     <div class="container container-layout my-3 flow">
 
-      <section id="hero bg-primary">
+      <section id="hero" class="bg-primary">
         <div class="hero__container">
           <div class="hero__about-content">
             <h1 class="hero__title fw-400 text-center ff-secondary">
-              Our product is <span class="fw-700">coming soon</span>
+              Our product
+              <br>
+              is <strong>coming soon</strong>
             </h1>
 
             <p class="hero__p">A supporting statement for your value proposition to encourage customers to complete
@@ -61,44 +63,46 @@
         </div>
       </section>
 
-      <section class="my-2 bg-secondary">
-        <div class="section2 d-flex flex-column flex-j-a-center my-2">
-          <h2 class="section2__title text-center fw-700">Your Product in the Wild</h2>
+      <section class="bg-secondary">
+        <div class="section2__container">
+          <h2 class="section2__title">Your Product in the Wild</h2>
 
-          <p class="section2__subtitle">A few words about your product/offer. Focus on the benefits not the features.
-            Explain how your product will improve your customer’s life.</p>
+          <div class="section2__subtitle">
+            <p>
+              A few words about your product/offer. Focus on the benefits not the features.
+            </p>
+            <p>Explain how your product will improve your customer’s life.</p>
+          </div>
+          <!-- START CARDS CONTAINER -->
+          <div class="section2__cards mt-2">
 
-          <div class="section2__main-content">
+            <div class="section2__benefit-card">
+              <img src="./assets/icons/section-2_icon-1.png" alt="" class="section2__icons">
+              <p class="section2__benefit-title">Benefit No. 1</p>
+              <p class="section2__benefit-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+              </p>
+            </div>
 
-            <div class="section2__cards my-2">
+            <div class="section2__benefit-card">
+              <img src="./assets/icons/section-2_icon-2.png" alt="" class="section2__icons">
+              <p class="section2__benefit-title">Benefit No. 2</p>
+              <p class="section2__benefit-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+              </p>
+            </div>
 
-              <div class="section2__benefit-card">
-                <img src="./assets/icons/section-2_icon-1.png" alt="" class="section2__icons">
-                <p class="section2__benefit-title">Benefit No. 1</p>
-                <p class="section2__benefit-p">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
-                </p>
-              </div>
-
-              <div class="section2__benefit-card">
-                <img src="./assets/icons/section-2_icon-2.png" alt="" class="section2__icons">
-                <p class="section2__benefit-title">Benefit No. 2</p>
-                <p class="section2__benefit-p">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
-                </p>
-              </div>
-
-              <div class="section2__benefit-card">
-                <img src="./assets/icons/section-2_icon-3.png" alt="" class="section2__icons">
-                <p class="section2__benefit-title">Benefit No. 3</p>
-                <p class="section2__benefit-p">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
-                </p>
-              </div>
-
+            <div class="section2__benefit-card">
+              <img src="./assets/icons/section-2_icon-3.png" alt="" class="section2__icons">
+              <p class="section2__benefit-title">Benefit No. 3</p>
+              <p class="section2__benefit-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi aliquid distinctio animi.
+              </p>
             </div>
 
           </div>
+          <!-- END CARDS CONTAINER -->
+
         </div>
       </section>
 

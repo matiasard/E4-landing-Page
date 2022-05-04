@@ -112,6 +112,10 @@ nav,
 	}
 }
 
+.section-title {
+	width: 230px;
+}
+
 /* ----------------------- */
 /* - SECTION 1             */
 /* ----------------------- */
@@ -124,13 +128,47 @@ nav,
 	align-items: center; */
 }
 
-.hero h1 {
+.hero__container {
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content max-content;
+	text-align: center;
+
+	align-content: center;
+
+	/* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
+	/* align-items: center; */
+	/* padding-bottom: 5rem; */
+}
+
+.hero__about-content {
+	display: flex;
+	gap: var(--gap, 1em);
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__title {
 	line-height: 1.1;
+	width: 230px;
+}
+
+.hero__p {
+	width: 70%;
+	text-align: center;
 }
 
 .hero__img {
-	width: 201px;
-	height: 180px;
+	/* width: 201px;
+	height: 180px; */
+}
+
+.hero__img-content {
+	display: flex;
+	justify-content: center;
 }
 
 /* ----------------------- */
@@ -140,15 +178,18 @@ nav,
 	font-size: 15.5px;
 }
 
-.section2 h2 {
+.section2__title {
+	width: 230px;
 	font-size: 1.7rem;
 }
 
 .section2__subtitle {
 	width: 300px;
+	text-align: center;
 }
 
 .section2__cards {
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -184,9 +225,74 @@ nav,
 }
 
 .section3__title {
+	width: 230px;
 	font-size: 23px;
 }
 
-.section3 p {
+.section3__paragraph {
 	width: 250px;
+}
+
+/* ----------------------- */
+/* - MEDIA QUERIES         */
+/* ----------------------- */
+
+@media (min-width: 768px) {
+	/* ----------------------- */
+	/* - SECTION 1             */
+	/* ----------------------- */
+	.hero__container {
+		/* width: 764px; */
+	}
+
+	.hero__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
+		grid-gap: 2em;
+		align-content: center;
+		/* align-items: center; */
+		/* padding-bottom: 5rem; */
+	}
+
+	.hero__about-content {
+	}
+
+	.hero__title {
+		width: auto;
+	}
+
+	.hero__p {
+		width: auto;
+	}
+
+	.hero__img {
+		/* width: 100%; */
+		/* height: 180px; */
+	}
+
+	/* ----------------------- */
+	/* - SECTION 2             */
+	/* ----------------------- */
+
+	.section2__cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 3rem;
+		justify-content: center;
+	}
+
+	.section2__subtitle {
+		width: 70%;
+	}
+
+	/* ----------------------- */
+	/* - SECTION 3             */
+	/* ----------------------- */
+}
+
+@media (min-width: 1024px) {
+	body {
+		background-color: rgba(255, 0, 0, 0.507);
+	}
 }

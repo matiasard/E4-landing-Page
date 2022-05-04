@@ -144,6 +144,10 @@ nav,
 	font-size: 1.7rem;
 }
 
+.section2__subtitle {
+	width: 300px;
+}
+
 .section2__cards {
 	display: flex;
 	flex-direction: column;

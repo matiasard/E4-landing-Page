@@ -16,29 +16,56 @@
     <div class="nav-brand">
       <h1 class="ff-primary">
         <!-- <a href="./index.html" class="text-white">GamesNews</a> -->
-        <a href="#hero">
-          <img src="./assets/images/main-logo-brand.png" alt="">
-        </a>
       </h1>
+      <a href="#hero">
+        <img src="./assets/images/main-logo-brand.png" alt="">
+      </a>
     </div>
-    <nav class="uppercase" id="nav-links">
+    <!-- <nav class="uppercase">
       <div class="dropdown">
-        <!-- <button class="btb-menu" id="close-btn">X</button> -->
-
         <a href="#" class="navigation-menu">Menu</a>
         <div class="dropdown-content">
           <a href="#" class="">about</a>
           <a href="#product" class="">product</a>
-          <!-- <a href="#" class="">trucos/guías</a> -->
           <a href="#contact" class="">contact</a>
         </div>
       </div>
       <a href="#" class="a-link">about</a>
       <a href="#product" class="a-link">product</a>
-      <!-- <a href="#" class="a-link">trucos/guías</a> -->
       <a href="#contact" class="a-link">contact</a>
+    </nav> -->
+
+    <nav class="nav-content">
+      <a href="#hero" class="nav-link-a">home</a>
+      <a href="#service" class="nav-link-a">service</a>
+      <a href="#contact" class="nav-link-a">about</a>
     </nav>
-    <!-- <button class="btb-menu" id="open-btn">MEN</button> -->
+
+    <div class="nav-menu">
+      <!-- <a href="#" class="nav-link-a">home</a>
+      <a href="#" class="nav-link-a">about</a>
+      <a href="#" class="nav-link-a">service</a> -->
+
+      <!-- NAV Hamburger -->
+      <div class="nav-links" id="nav-links">
+        <button class="btn-menu" id="close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path
+              d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+          </svg>
+        </button>
+
+        <a href="#hero" class="nav-link-a">home</a>
+        <a href="#service" class="nav-link-a">service</a>
+        <a href="#contact" class="nav-link-a">about</a>
+      </div>
+
+      <button class="btn-menu-open" id="open-btn">
+        <img src="./assets/icons/bars-staggered-solid.svg" alt="">
+      </button>
+      <!-- NAV Hamburger -->
+    </div>
+
   </header>
 
   <main>
@@ -65,7 +92,7 @@
         </div>
       </section>
 
-      <section id="product" class="bg-secondary">
+      <section id="service" class="bg-secondary">
         <div class="section2__container">
           <h2 class="section2__title">Your Product in the Wild</h2>
 
@@ -136,18 +163,19 @@
     </div>
   </main>
 
-  <!-- <script>
-    const closeBtn = document.getElementById('close-btn')
-    const openBtn = document.getElementById('open-btn')
+  <script>
+    const navs = document.getElementById('nav-links');
+    const closeBtn = document.getElementById('close-btn');
+    const openBtn = document.getElementById('open-btn');
 
     openBtn.addEventListener('click', () => {
       navs.classList.add('open')
     })
 
     closeBtn.addEventListener('click', () => {
-      navs.classList.add('open')
+      navs.classList.remove('open')
     })
-  </script> -->
+  </script>
 
 </body>
 

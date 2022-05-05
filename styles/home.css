@@ -147,12 +147,14 @@ nav,
 	.btn-menu-open {
 		display: block;
 		width: 50px;
+		border: none;
+		background: #fff;
 	}
 
 	.nav-links.open {
+		display: flex;
 		right: 0;
 		transition: 0.5s ease;
-		display: flex;
 	}
 
 	.nav-links {

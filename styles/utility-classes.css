@@ -131,7 +131,7 @@ select {
 /* .flow > * + * {} */
 .flow > *:where(:not(:first-child)) {
 	margin-top: var(--flow-space, 1.8rem);
-	outline: 3px solid red;
+	/* outline: 3px solid red; */
 }
 
 .container {

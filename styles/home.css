@@ -90,6 +90,15 @@ nav,
 	background-color: var(--text-accent-1);
 }
 
+.btn-menu {
+	border: 0;
+	box-shadow: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 16px;
+	display: none;
+}
+
 /* ----------------------- */
 /* - MEDIA QUERIES         */
 /* ----------------------- */
@@ -99,6 +108,10 @@ nav,
 	}
 	nav .a-link {
 		display: none !important;
+	}
+
+	.btn-menu {
+		display: block;
 	}
 }
 
@@ -362,9 +375,9 @@ nav,
 }
 
 @media (min-width: 900px) {
-	body {
+	/* body {
 		background-color: rgba(255, 0, 0, 0.089);
-	}
+	} */
 	.section3__container {
 		justify-content: flex-end;
 		max-width: 950px;

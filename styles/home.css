@@ -341,6 +341,63 @@ nav,
 	margin: 0;
 }
 
+/* ----------------------- */
+/* - SECTION 4             */
+/* ----------------------- */
+.section4__container {
+	font-size: 15.5px;
+	display: flex;
+	gap: var(--gap, 1.5em);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section4__cards_container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap, 1em);
+}
+
+.section4__title {
+	font-size: 1.7rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+.section4__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--gap, 1em);
+}
+
+.section4__card_qoute {
+	font-size: 120px;
+	height: 95px;
+}
+
+.section4__card_text {
+	width: 250px;
+	text-align: center;
+	color: var(--text-grey);
+}
+
+.section4__card_footer {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap, 0.5em);
+	text-align: center;
+}
+
+.section4__companyLogo {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	grid-gap: var(--gap, 3em);
+}
+
 /**-------------------------------------------**/
 /**-----------  MEDIAs QUERIES                **/
 /**-------------------------------------------**/
@@ -438,6 +495,10 @@ nav,
 		width: auto;
 		margin: 0;
 	}
+
+	/* ----------------------- */
+	/* -  MQ -  SECTION 4      */
+	/* ----------------------- */
 }
 
 @media (min-width: 900px) {

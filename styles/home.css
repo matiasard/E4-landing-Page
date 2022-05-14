@@ -447,6 +447,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
+	margin: auto;
 }
 form .form_data {
 	/* color: red; */

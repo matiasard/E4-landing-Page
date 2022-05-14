@@ -268,7 +268,7 @@ nav,
 }
 
 .section2__title {
-	width: 230px;
+	width: 280px;
 	font-size: 1.7rem;
 	text-align: center;
 	font-weight: 700;
@@ -306,6 +306,7 @@ nav,
 	color: var(--text-accent-1);
 	font-weight: 700;
 	font-size: var(--fs-400);
+	font-size: 1.25em;
 }
 
 /* ----------------------- */

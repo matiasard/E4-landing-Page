@@ -546,13 +546,13 @@ input[type="checkbox"] {
 	.section2__cards {
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 5rem;
+		gap: 2rem;
 		row-gap: 3rem;
 		justify-content: center;
 	}
 
 	.section2__benefit-p {
-		width: 215px;
+		width: 264px;
 	}
 
 	/* ----------------------- */
@@ -701,7 +701,7 @@ input[type="checkbox"] {
 	/* -  MQ -  SECTION 2      */
 	/* ----------------------- */
 	.section2__cards {
-		gap: 9rem;
+		gap: 7rem;
 	}
 
 	/* ----------------------- */

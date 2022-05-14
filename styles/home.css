@@ -155,6 +155,8 @@ nav,
 		display: flex;
 		right: 0;
 		transition: 0.5s ease;
+
+		position: fixed;
 	}
 
 	.nav-links {
@@ -403,6 +405,87 @@ nav,
 	grid-gap: var(--gap, 3em);
 }
 
+/* ----------------------- */
+/* - SECTION 5             */
+/* ----------------------- */
+.section5__container {
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content max-content;
+	text-align: center;
+}
+
+.section5__title {
+	font-size: 1.7rem;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 2em;
+}
+
+.section5__text {
+	font-size: 17px;
+	color: var(--text-grey);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.section5__info-contact {
+	color: #3f5aff;
+}
+
+.section5__contact_form {
+	width: 100%;
+	/* margin-bottom: 2em; */
+}
+
+form {
+	max-width: 500px;
+	font-size: 15.5px;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+form .form_data {
+	/* color: red; */
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+}
+
+form .form_data:nth-child(4) {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+}
+form .form_data label {
+	font-weight: bold;
+}
+
+form .form_data input {
+	margin-top: 11px;
+	font-size: 19px;
+	height: 46px;
+	border-radius: 29px;
+	padding-inline: 1em;
+	display: inline-block;
+
+	border-top: 1px solid #ab8fe2;
+	border-left: 1px solid #ab8fe2;
+	border-right: 1px solid #ab8fe2;
+	border-bottom: 1px solid #ab8fe2;
+}
+input[type="checkbox"] {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	/* margin: -1px 4px 0 0; */
+	vertical-align: middle;
+	cursor: pointer;
+}
+
 /**-------------------------------------------**/
 /**-----------  MEDIAs QUERIES                **/
 /**-------------------------------------------**/
@@ -547,6 +630,44 @@ nav,
 	.section4__companyLogo {
 		grid-template-columns: repeat(4, 1fr);
 		margin-top: 5em;
+	}
+
+	/* ----------------------- */
+	/* -  MQ -  SECTION 5      */
+	/* ----------------------- */
+	.section5__container {
+		grid-template-columns: 1fr 1fr;
+		/* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
+		grid-gap: 3em;
+		align-content: center;
+		/* align-items: center; */
+
+		font-size: 1.2em;
+	}
+
+	.section5__title {
+		font-size: 2.7rem;
+		margin-bottom: 1em;
+		text-align: start;
+	}
+
+	.section5__text {
+		font-size: 1.2em;
+		text-align: start;
+	}
+	.section5__text-2 {
+		text-align: start;
+	}
+
+	.section5__contact_form {
+		border: #ab8fe2 3px solid;
+		border-radius: 16px;
+		padding-inline: 10px;
+	}
+	form {
+		max-width: 500px;
+		font-size: 0.9em;
+		margin: auto;
 	}
 }
 
